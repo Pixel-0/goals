@@ -7,7 +7,7 @@
       <div *ngFor='let goal of goals;let i = index'>
         <div>
           <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
-          <button (click)='toggleDetails(i)' class="btn btn-dark">Toggle Details</button>
+          <button (click)='toggleDetails(i)' class="btn btn-dark">Details</button>
         </div>
 
         <div *ngIf='goal.showDescription'>
